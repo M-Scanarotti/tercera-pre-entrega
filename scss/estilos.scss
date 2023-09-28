@@ -1,0 +1,144 @@
+/* FONDO */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://cdn.discordapp.com/attachments/911079941179842590/1148335350285082624/Dice.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* LOGO */
+.logo {
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        color: #000;
+    }
+
+    p {
+        color: #000;
+    }
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+header nav {
+    ul {
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            display: inline-block;
+            font-size: 20px;
+            margin: 15px;
+        }
+    }
+}
+
+/* Productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.product-card {
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.507);
+    height: 100%;
+    box-sizing: border-box;
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-details {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            background-color: white;
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+    }
+
+    // Agregar sombra a las tarjetas de productos
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+/* Formularios */
+.formulario {
+    background-color: antiquewhite;
+}
+
+/* Media Queries para vista móvil */
+@media screen and (max-width: 768px) {
+    .logo {
+        h1 {
+            font-size: 40px;
+        }
+
+        nav {
+            ul {
+                li {
+                    font-size: 16px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+
+        div {
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+
+    footer {
+        p {
+            font-size: 30px;
+        }
+    }
+}
